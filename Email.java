@@ -13,10 +13,14 @@ public class Email {
 	private int emailcap;
 	private String changepass;
 
-	public Email(String fname, String lname)
+	public Email()
 	{	
-		this.fname = fname;
-		this.lname = lname;
+		Scanner k = new Scanner(System.in);
+		System.out.print("Enter your first name: ");
+		this.fname = k.nextLine();
+		
+		System.out.print("Enter your last name: ");
+		this.lname = k.nextLine();
 		
 		//System.out.println("Employee: " + this.fname + " " + this.lname);
 		
